@@ -1,7 +1,6 @@
 const toDoForm = document.querySelector("#todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector("#todo-list");
-
 const TODOS_KEY = "todos";
 
 let toDos = [];
@@ -14,7 +13,7 @@ function saveToDos() {
 function deleteToDO(event) {
     const li = event.target.parentElement;
     li.remove();
-    toDos = toDos.filter(function (todo) { return todo.id !== parseInt(li.id) });
+    toDos = toDos.filter(function (todo) { return todo.id !== parseInt(li.id); });
     saveToDos();
 }
 
@@ -57,7 +56,4 @@ if (savedToDos !== null) {
     const parsedToDos = JSON.parse(savedToDos);
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
-
-} else {
-
 }
