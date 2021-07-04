@@ -46,7 +46,7 @@ body {
   border-radius: 1rem;
   color: white;
   text-align: center;
-  margin-bottom: 2vh;
+  margin-bottom: 1.2vh;
   border: none;
   font-size: 2vw;
   width: 30vw;
@@ -64,7 +64,7 @@ body {
   border: 0;
   outline: 0;
   box-shadow: none;
-  font-size: 2vw;
+  font-size: 1.8vw;
   width: 10vw;
   height: min(6vw, 4vh);
 }
