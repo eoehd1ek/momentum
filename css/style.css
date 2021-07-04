@@ -3,6 +3,10 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -18,21 +22,22 @@ body {
 }
 
 #clock {
-  margin-bottom: 0;
+  margin: 0;
+  padding-top: 8vh;
   text-align: center;
   color: white;
-  font-size: 6rem;
+  font-size: 10vw;
 }
 
 #greeting {
   margin: 0;
   text-align: center;
   color: white;
-  font-size: 3rem;
+  font-size: 3vw;
 }
 
+/* 이름 작성 로그인 폼 관련 */
 #login-form {
-  margin: 1em;
   text-align: center;
 }
 
@@ -41,11 +46,11 @@ body {
   border-radius: 1rem;
   color: white;
   text-align: center;
-  font-size: 1.2rem;
-  margin-left: 1rem;
+  margin-bottom: 2vh;
   border: none;
-  width: 14rem;
-  height: 2rem;
+  font-size: 2vw;
+  width: 30vw;
+  height: min(5vw, 4vh);
 }
 
 #login-form input::placeholder {
@@ -55,22 +60,23 @@ body {
 #login-form button {
   background-color: rgba(245, 245, 245, 0.3);
   color: whitesmoke;
-  margin-left: 0.8rem;
-  font-size: 1.1rem;
-  width: 5rem;
-  height: 2.1rem;
   border-radius: 1.2rem;
   border: 0;
   outline: 0;
   box-shadow: none;
+  font-size: 2vw;
+  width: 10vw;
+  height: min(6vw, 4vh);
 }
 
 #login-form button:hover {
   cursor: pointer;
 }
 
+/* TODO 리스트 관련 */
 #todo-form {
-  margin: 2em;
+  margin-top: 1.2vh;
+  margin-bottom: 2vh;
   text-align: center;
 }
 
@@ -78,11 +84,11 @@ body {
   background-color: rgba(245, 245, 245, 0.3);
   border-radius: 1rem;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2.8vh;
   text-align: center;
   border: none;
-  width: 32rem;
-  height: 2.5rem;
+  width: 80vw;
+  height: 5vh;
 }
 
 #todo-form input::placeholder {
@@ -91,41 +97,51 @@ body {
 
 #todo-list {
   list-style: none;
+  width: 70vw;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;
   color: white;
-  width: 28rem;
+  z-index: 1;
 }
 
 #todo-list li {
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.2vh;
+  height: 3vh;
+  min-height: 22px;
+  width: 70vw;
 }
 
-#todo-list span:first-child {
+#todo-list li span:first-child {
+  font-size: 2vh;
   margin-right: 0.8rem;
   margin-left: 0.8rem;
   background-color: #ff000025;
 }
 
-#todo-list span:first-child:hover {
+#todo-list li span:first-child:hover {
   cursor: pointer;
+}
+
+#todo-list li span:last-child {
+  font-size: 2vh;
 }
 
 #quote {
   position: absolute;
-  font-size: 1rem;
-  bottom: 3rem;
-  left: 3rem;
+  font-size: 1.5vh;
+  bottom: 2vh;
+  left: 2vh;
+  right: 2vh;
   color: white;
 }
 
 #weather {
   position: absolute;
-  font-size: 1.2rem;
-  top: 3rem;
-  right: 3rem;
+  font-size: 2vh;
+  top: 2vh;
+  right: 2vh;
   color: white;
 }
