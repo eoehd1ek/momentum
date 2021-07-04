@@ -25,12 +25,12 @@ function paintToDo(newTodoObj) {
     const span = document.createElement("span");
     span.innerText = newTodoObj.text;
     // 버튼 생성
-    const button = document.createElement("button");
-    button.innerText = "❌";
-    button.addEventListener("click", deleteToDO);
+    const clickSpan = document.createElement("span");
+    clickSpan.innerText = "❌";
+    clickSpan.addEventListener("click", deleteToDO);
     // 요소 등록
+    li.appendChild(clickSpan);
     li.appendChild(span);
-    li.appendChild(button);
     toDoList.appendChild(li);
 }
 
